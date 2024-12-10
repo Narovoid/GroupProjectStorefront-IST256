@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+	body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+}
+
+#productForm {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #1E1E1E;
+    border: 1px solid #4CAF50;
+    color: #ffffff;
+}
+
+input[type="file"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #1E1E1E;
+    border: 1px solid #4CAF50;
+    color: #ffffff;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+</style>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Selling Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>GIGABYTE Nvidia RTX 3070</h1>
+    <div id="productForm" class="form-container">
+        <div class="image-container">
+            <img src="https://m.media-amazon.com/images/I/71Ptl62JWkL._AC_SL1500_.jpg" alt="RTX 3070"
+                width = "350"
+                height="350"/>
+        </div>
+        <div class="input-container">
+            <input type="text" id="productName" placeholder="Nvidia RTX 3070" readonly>
+            <input type="number" id="productPrice" placeholder="$499.99" readonly>
+            <textarea id="productDescription" placeholder="Brand	GIGABYTE
+Graphics Ram Size	12 GB
+GPU Clock Speed	2490 MHz
+Video Output Interface	DisplayPort, HDMI" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
